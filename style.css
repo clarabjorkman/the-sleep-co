@@ -109,6 +109,13 @@ a {
 
 }
 
+nav a {
+    padding:2%;
+    border-bottom: none;
+    display:inline-block;
+    
+}
+
 a:hover {
     color:#ffbe00;
 }
@@ -118,6 +125,7 @@ header {
     background-image: url('/images/the-sleep-co-4.jpg');
     background-size:cover;
     background-position: center;
+    padding:1% 2%;
 }
 
 header h3 {
@@ -143,6 +151,43 @@ footer a {
     background-image: url(/images/the-sleep-co-2.jpg);
     background-position: 50% 60%;
 }
+
+
+/* buttons & forms */
+
+input,
+textarea {
+    display:block;
+    width:100%;
+    font-family: inherit;
+    padding:0.5rem;
+    font-size:0.9rem;
+    margin-bottom:0.3rem;
+    border:1px solid transparent;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #ffbe00;
+    outline:none;
+}
+
+
+.button {
+    padding:2% 5%;
+    background-color: #ffbe00;
+    color: #E3ECF2;
+    margin-top: 0.5rem;
+    font-family: inherit;
+    border: none;
+}
+
+button:hover {
+    background-color: #192b37;
+}
+
+
 .quote-icon {
         font-size: 6rem;
         display: inline-block;
@@ -157,7 +202,6 @@ footer a {
 }
 
 .navigation {
- background-color:white;
  color:grey;
  padding:1rem;
  text-align: center;
@@ -167,4 +211,8 @@ footer a {
 .logo {
     padding: 1rem;
 
+}
+
+.logo h2 {
+    margin-top: 0;
 }
