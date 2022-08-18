@@ -1,13 +1,49 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<!---This is the head of our html where we add external resources and meta data-->
+<head>
+
+    <!--Viewport Meta for Responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> Peeakaboo!</title>
+    <!--This is our grid stylesheet-->
+
+
+    <!--This is our font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <!--This is our gridlex stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+   
+    <!------Google fonts -  Catamaran (200,400,500,800)------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&family=Work+Sans:ital,wght@0,200;0,400;0,700;1,200&display=swap" rel="stylesheet">
+   
+   
+    <!---This is our CSS Stylesheet, this always goes last-->
+    <link href="/style.css" rel="stylesheet">
+
+</head>
+<!---This is the body where all the page contents go-->
+<body>
+
     <!-----------This is our header banner---------->
 
     <header class=" grid tall-70">
 
 
-        {% include header-nav.html %}
+        <div class="grid col-12-top sm-padded-b-0">
+    <h2 class="col-4_xs-12-middle logo"> The Sleep Co</h2>
+    <nav class="navigation col-8_xs-12-middle text-right sm-text-center">
+        <a href="/index.html">Home </a>
+        <a href="/about.html">About </a>
+        <a href="/contact.html">Contact </a>
+        <a href="/products.html">Products </a>
+    </nav>
+</div>
 
 
         <div class="col-12 text-center ">
@@ -84,3 +120,21 @@ layout: default
 
 
 
+
+
+
+<!---------------- footer ------------>
+<footer class="padded grid-spaceBetween bg-dark">
+    <div class="col-4-bottom">
+        <h2> let's <span class="featured-text" ><br>connect</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quos magnam obcaecati illum suscipit eum voluptate ratione culpa, rerum optio cumque, impedit, assumenda explicabo blanditiis. Tenetur odio voluptatibus repellendus eaque.</p>
+    </div>
+    <div class="col-6-bottom">
+        <p> <strong>Call:</strong> <a href="tel:#"> 0827374663 </a> </p>
+        <p> <strong>Email: </strong>  <a href="mailto:#">thesleepco@admin.co </a> </p>
+        <p> <strong>Store:</strong> 55 Main street chicago </a> </p>
+        <p> <strong>Instagram:</strong> <a href="https://www.instagram.com/sleepco"> @thesleepco </a> </p>
+    </div>
+</footer>
+</body>
+</html>
